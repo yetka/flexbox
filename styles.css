@@ -1,0 +1,109 @@
+h1 {
+  text-align: center;
+  color: #00b3b3;
+}
+
+
+.main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background-color: #ccffff;
+}
+
+.main-info p {
+  background-color: #e6ffff;
+  padding: 20px;
+}
+
+.selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cccccc;
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.selection label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.selection .options {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 20px;
+}
+
+.selection .options select {
+  font-size: 18px;
+}
+
+.sodaImage {
+  background-color: magenta;
+  display: flex;
+  height: 400px;
+}
+
+.sodaImage img {
+  width: 200px;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+  color: #00b3b3;
+  margin: 50px;
+}
+
+.output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #00cccc;
+}
+
+.output p {
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  padding: 5px;
+}
+
+.output p:nth-child(odd) {
+  background-color: gray;
+  color: white;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.output p:nth-child(even) {
+  align-self: flex-end;
+}
+
+@media (max-width: 800px) {
+  .output {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

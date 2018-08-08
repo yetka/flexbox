@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="javascript" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chrystelle</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="test.js"></script>
+  </head>
+  <body>
+    <h1>Drinks choice for Chrystelle to practice taking input from a user</h1>
+    <div class="main-info">
+      <p>Praesent ut tellus vitae neque laoreet venenatis vel sed sapien. Aenean tincidunt odio tempor, ultrices odio vel, ultricies lectus. Nullam vel lacinia ante. Aenean pellentesque, mauris at commodo vestibulum, erat lorem vestibulum metus, sed ullamcorper dui nibh ut odio. Curabitur pulvinar diam sit amet ante fermentum, eget vestibulum mauris ornare. Duis hendrerit purus nec eleifend semper. In imperdiet neque sit amet nibh scelerisque molestie. Etiam mattis odio arcu, sed convallis velit dignissim ac. Phasellus mattis sapien enim, non eleifend nunc hendrerit in. Nullam fermentum mauris porta velit sollicitudin euismod. Mauris quis ante id nibh sagittis placerat. Maecenas id sollicitudin tellus.</p>
+      <p>Duis varius mauris sem. Aliquam erat volutpat. Phasellus luctus, felis eu volutpat lobortis, nulla tellus tincidunt tellus, quis tempus turpis magna sed lectus. Integer urna lacus, porttitor at molestie ac, pharetra eget augue. Fusce cursus, dolor vel tempor sagittis, ante dui efficitur dolor, sit amet varius augue nulla interdum enim. Suspendisse euismod eget tortor eu vulputate. Vestibulum tempor metus vel velit tristique, et facilisis enim sodales. Donec sed volutpat ex. Mauris massa elit, feugiat sit amet sem ac, scelerisque feugiat tortor. Donec tempor, est in sodales luctus, metus tellus efficitur diam, in facilisis sapien metus in lacus. Praesent eu mi et augue elementum accumsan eu ut orci.</p>
+    </div>
+    <div class="selection">
+      <label>Please select your favourite drink from dropdown menu</label>
+      <div class="options">
+        <select id="drinks" onchange="my_function_checking_drinks()">
+          <option value="cola">cola</option>
+          <option value="fanta">fanta</option>
+          <option value="tea">beer</option>
+          <option value="coffee">coffee</option>
+          <option value="wather">wather</option>
+          <option value="milk">milk</option>
+        </select>
+      </div>
+    </div>
+    <div class="sodaImage">
+      <img src="https://jooinn.com/images/splashing-drink-5.jpg" alt="soda image">
+    </div>
+    <h3>What your choice it telling about your personality</h3>
+    <div class="output">
+      <p>Praesent ut tellus vitae neque laoreet venenatis vel sed sapien. Aenean tincidunt odio tempor, ultricies lectus. Nullam vel lacinia ante. Aenean pellentesque, mauris at commodo vestibulum, erat lorem vestibulum metus, sed ullamcorper dui nibh ut odio. Curabitur pulvinar diam sit amet ante fermentum, eget vestibulum mauris ornare. </p>
+      <p>Praesent ut tellus vitae neque laoreet venenatis vel sed sapien. Aenean tincidunt odio tempor, ultrices odio vel, ultricies lectus. Curabitur pulvinar diam sit amet ante fermentum, eget vestibulum mauris ornare. </p>
+      <p>Curabitur pulvinar diam sit amet ante fermentum, eget vestibulum mauris ornare. </p>
+      <p>Nullam vel lacinia ante. Aenean pellentesque, mauris at commodo vestibulum, erat lorem vestibulum metus, sed ullamcorper dui nibh ut odio. Curabitur pulvinar diam sit amet ante fermentum, eget vestibulum mauris ornare. </p>
+      <p>Praesent ut tellus vitae neque laoreet venenatis vel sed sapien. Aenean tincidunt odio tempor, ultrices odio vel, ultricies lectus.</p>
+      <p>Praesent ut tellus vitae neque laoreet venenatis vel sed sapien. Aenean tincidunt odio tempor, ultrices odio vel, ultricies lectus. Nullam vel lacinia ante. Aenean pellentesque, mauris at commodo vestibulum, erat lorem vestibulum metus, sed ullamcorper dui nibh ut odio.</p>
+    </div>
+    
+    
+    <script type="text/javascript">
+      function my_function_checking_drinks() {
+        var drink_choice = document.getElementById("drinks").value;
+        document.write("Ok, that seems you like " +drink_choice);
+      }
+    </script>
+  </body>
+</html>
